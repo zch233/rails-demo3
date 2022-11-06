@@ -7,6 +7,17 @@
   <title>Document</title>
 </head>
 <body>
-  <%= yield %>
+<% if content_for? :header %>
+  <header>
+    <%= yield :header %>
+  </header>
+<% end %>
+
+
+<%= yield %>
+
+<footer>
+  <%= yield :footer %>
+</footer>
 </body>
 </html>

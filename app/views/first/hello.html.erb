@@ -1,2 +1,10 @@
 <div>Hello Rails</div>
 <p><%= @zch %></p>
+
+<% content_for :footer do %>
+  <div>我是底部内容</div>
+<% end %>
+
+<%# content_for :header do %>
+<!--  <div>我是头部内容</div>-->
+<%# end %>
